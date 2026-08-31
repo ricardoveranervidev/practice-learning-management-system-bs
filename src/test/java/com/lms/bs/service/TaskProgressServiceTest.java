@@ -7,6 +7,7 @@ import com.lms.bs.repository.CourseRepository;
 import com.lms.bs.repository.TaskProgressRepository;
 import com.lms.bs.repository.TaskRepository;
 import com.lms.bs.repository.UserRepository;
+import com.lms.bs.service.impl.TaskProgressServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -36,7 +37,7 @@ class TaskProgressServiceTest {
     private CourseRepository courseRepository;
 
     @InjectMocks
-    private TaskProgressService taskProgressService;
+    private TaskProgressServiceImpl taskProgressService;
 
     private User testUser;
     private Course testCourse;

@@ -5,6 +5,7 @@ import com.lms.bs.dto.EnrollmentDto;
 import com.lms.bs.exception.DuplicateEnrollmentException;
 import com.lms.bs.exception.ResourceNotFoundException;
 import com.lms.bs.repository.*;
+import com.lms.bs.service.impl.EnrollmentServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -36,7 +37,7 @@ class EnrollmentServiceTest {
     private TaskProgressRepository taskProgressRepository;
 
     @InjectMocks
-    private EnrollmentService enrollmentService;
+    private EnrollmentServiceImpl enrollmentService;
 
     private User testUser;
     private Course testCourse;

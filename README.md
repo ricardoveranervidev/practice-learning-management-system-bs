@@ -54,8 +54,9 @@ backend-bs/
     │       ├── config/                   # Configuración MVC, OpenAPI y MdcLoggingFilter
     │       ├── domain/entity/            # Entidades JPA (User, Course, Enrollment, Task, TaskProgress)
     │       ├── repository/               # Repositorios Spring Data JPA
-    │       ├── service/                  # Lógica de negocio (Auth, Course, Enrollment, TaskProgress)
-    │       ├── controller/               # Controladores REST (/auth, /courses, /me)
+    │       ├── service/                  # Interfaces de servicios (Auth, Course, Enrollment, TaskProgress)
+    │       │   └── impl/                 # Implementaciones de servicios (@Service)
+    │       ├── controller/               # Controladores REST (/api/v1/auth, /api/v1/courses, /api/v1/me)
     │       ├── dto/                      # Data Transfer Objects y ApiResponse genérico
     │       ├── exception/                # GlobalExceptionHandler y excepciones personalizadas
     │       ├── security/                 # Filtro JWT, TokenProvider, UserPrincipal y SecurityConfig

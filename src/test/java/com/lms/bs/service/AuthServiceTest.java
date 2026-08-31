@@ -7,6 +7,7 @@ import com.lms.bs.dto.AuthResponse;
 import com.lms.bs.exception.UnauthorizedException;
 import com.lms.bs.repository.UserRepository;
 import com.lms.bs.security.JwtTokenProvider;
+import com.lms.bs.service.impl.AuthServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -32,7 +33,7 @@ class AuthServiceTest {
     private JwtTokenProvider tokenProvider;
 
     @InjectMocks
-    private AuthService authService;
+    private AuthServiceImpl authService;
 
     private User testUser;
 
